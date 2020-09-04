@@ -112,3 +112,38 @@ These MTG creatures are nothing like tomagatchi's . The cute cuddly creatures th
 
 The MTG creatures come with flavor text and color palletes, and all kinds of intersting things like toughness and power. These are additional features that can help extract a more unique creature for the environment. 
 
+
+On an initial load, if the architecture is very young and the cloudformation templates are the first to be built. Then I should be able to search for creatures of a certain color and power.  As the architecture grows in complexity and age i can increase the search to higher power levels and toughness. 
+
+A MTG creature that is returned is used to model the cloud cretaure by leveraging the metadata/flavortext/name/effects of that MTG creature. 
+
+## Translating from MTG Creature to Cloud Creature
+
+A big question was what would be the anatomy of cloud creatures once i have translated the cloud into known types of land. 
+I took a glance at this [document on anatomy of animals](https://craftx.org/sites/all/themes/craft_blue/pdf/Anatomy_and_Physiology_of_Animals.pdf). I learned about the skeletal structures and locomotion and how the anatomy is designed for the environment. The generalized environments provided MTG , is not going to be enough. SO , i need to create a sliding scale between each of the MTG terrains associated with the color wheel. Each extreme anatomy needs to be "tweened"
+so by taking adaptations and using the extreme of that adaptation i can map it to the MTG colorwheel dichotomies. This will provide adaptations that are related to the continuum of the cloud creature color measurements. 
+
+
+| Color 	| Basic Land 	| Anatomy Locomotion 	| Anatomy fore Limbs 	| Mouth        	| skin                                      	| Teeth       	| Art Style 	| Muscle                                  	|
+|-------	|------------	|--------------------	|--------------------	|--------------	|-------------------------------------------	|-------------	|-----------	|-----------------------------------------	|
+| White 	| Plains     	| Unguligrade        	| 4 legs             	| herbivore    	| rough short hair,pastel colors,pattterned 	| Tusks       	| Broad     	| Lean arms and thick legs                	|
+| Blue  	| Island     	| feathers           	| wings/arms         	| pescatarian  	| thin cloroful,scaley,feathery             	| Beak        	| Smooth    	| Grip/Bite                               	|
+| Black 	| Swamp      	| Fins               	| tentacles          	| scavengers   	| scabbed, slimey,gooey,wrinkley            	| sharp teeth 	| Jagged    	| Minimal, almost skeletal                	|
+| Red   	| Mountain   	| Digitigrade        	| short 4 legs       	| carnivore    	| coarse hair, dark or light                	| horns       	| Agile     	| Compact , Lean legs, small but powerful 	|
+| Green 	| Forest     	| Plantigrade        	| 4 legs             	| herbivore    	| fluffy,thick,furry,rough                  	| antlers     	| Strong    	| Large muscle mass, Fatty                	|
+
+
+
+
+
+Testing the idea here is a wierd looking pokemon :
+- it looks like somekind of mokey bird hybrid. 
+- so through some backward induction , it would of been somewhere between white and blue since it embodies the artstyle of smooth and broad, lean arms and thick leg with grip, it has more of a beak than a tusk. it has some colorgul patterned hair, looks like a herbivore and has arms instead of wings but has 4 limbs. 
+
+![](https://oyster.ignimgs.com/mediawiki/apis.ign.com/pokemon-switch/e/ea/Grookey.jpg =100x)
+
+Some issues:
+- The breakdown needs to be though out more, since there are ambiguities in the muscle, and anatomy dimensions. This means that these artistic features need to have an intensity metric that balances how much of it becomes pronounced or not. This could come from the intensity of the color not just the ranking of the color. Where the intensity is derived from the overlaid webservice rankings in a set of services inside an architecture.
+
+> Note: I would need to understand how to apply these artistic components to a poseable skeleton to get cute poses like this funky looking monkeybird thing. 
+
