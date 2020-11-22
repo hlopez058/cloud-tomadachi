@@ -5,7 +5,11 @@ Cloud formation template generated avatar
 1. Read cloudformation template
 2. Extract features
 3. Seed avatar generator
-4. Render avatar as image
+~4. Render avatar as image~
+4. attempt to use the svg superformula instead of an avatar 
+
+https://github.com/jasonwebb/SuperformulaSVG-for-web/blob/master/js/drawing-functions.js
+
 
 
 
